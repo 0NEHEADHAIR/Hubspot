@@ -13,7 +13,7 @@ jobs:
       - name: HubSpot Deploy Action
         uses: HubSpot/hubspot-cms-deploy-action@v2
         with:
-          src_dir: src  # Change this to your source directory (where your CMS files are)
-          dest_dir: my-theme  # Change this to your desired HubSpot destination directory
+          src_dir: my-website-theme
+          dest_dir: my-website-theme
           account_id: ${{ vars.HUBSPOT_ACCOUNT_ID }}
           personal_access_key: ${{ secrets.HUBSPOT_PERSONAL_ACCESS_KEY }}
